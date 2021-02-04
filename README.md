@@ -12,7 +12,7 @@ npm install --save company-custom-components
 
 ## Usage
 
-```jsx
+```tsx
 import React, { Component } from 'react'
 
 import MyComponent from 'company-custom-components'
