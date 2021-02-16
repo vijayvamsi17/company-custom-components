@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'company-custom-components'
+import { HomeComponent } from 'company-custom-components'
 import 'company-custom-components/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+
+  function gotolink(link: any) {
+    console.log("from Parent " + link);
+  }
+
+  return <HomeComponent gotolink={gotolink} />
 }
 
-export default App
+export default App;
